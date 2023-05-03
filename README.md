@@ -25,7 +25,7 @@
 ## Getting Started
 To use the app, follow these steps:
 
-- Download and install the APK file from this repository.
+- Download and install the APK file from this link: https://drive.google.com/file/d/16KZuZRiagBuvY_fkjtBFAoh3Ookdautu/view?usp=share_link 
 - Open the app.
 - Browse through the list of products.
 - Click on a product to view its details.
