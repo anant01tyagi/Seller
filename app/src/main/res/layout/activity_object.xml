@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#B0E3AA"
+    tools:context=".activities.ObjectActivity">
+
+    <ImageView
+        android:id="@+id/imgObject"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="10dp"
+        android:elevation="25dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.459"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <RelativeLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="#2F9C17"
+        android:elevation="25dp"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgObject"
+        app:layout_constraintVertical_bias="0.142">
+
+        <TextView
+            android:id="@+id/tvObjectPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvObjectName"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/labelObjectPrice"
+            android:text="Price" />
+
+        <TextView
+            android:id="@+id/labelObjectPrice"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvObjectName"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Price:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvObjectName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Name"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvObjectDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvObjectPrice"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/labelObjectDate"
+            android:text="Date" />
+
+        <TextView
+            android:id="@+id/labelObjectDate"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelObjectPrice"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Date:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvObjectUID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvObjectDate"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/labelObjectUID"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/labelObjectUID"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelObjectDate"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:text="UID:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/labelObjectImageID"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labelObjectUID"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Image ID:"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvObjectImageID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvObjectUID"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/labelObjectImageID"
+            android:text="TextView" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#2F9C17"
+        android:text="Add to Cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
